@@ -11,29 +11,35 @@
 </head>
 <body>
   <header>
-    <p>My balance</p>
-    <p>$921.48</p>
+    <div class="content-balance">
+      <p class="content-balance__myalance">My balance</p>
+      <p class="content-balance__number">$921.48</p>
+    </div>    
     <figure>
       <img src="./images/logo.svg" alt="logo">
     </figure>
   </header>
   <main>
     <h1>Spending - Last 7 days</h1>
-    <section>
-      <p>mon<span>barra</span></p>
-      <p>tue<span>barr</span></p>
-      <p>wed<span>barra</span></p>
-      <p>thu<span>barra</span></p>
-      <p>fri<span>barra</span></p>
-      <p>sat<span>barra</span></p>
-      <p>sun<span>barra</span></p>
+    <section class="content-week">
+      <p>mon<span class="span-week week-span__mon"></span></p>
+      <p>tue<span class="span-week week-span__tue"></span></p>
+      <p>wed<span class="span-week week-span__wed"></span></p>
+      <p>thu<span class="span-week week-span__thu"></span></p>
+      <p>fri<span class="span-week week-span__fri"></span></p>
+      <p>sat<span class="span-week week-span__sat"></span></p>
+      <p>sun<span class="span-week week-span__sun"></span></p>
     </section>
     <hr>
-    <section>
-      <p>Total this month</p>
-      <p>$478.33</p>
-      <p>+2.4%</p>
-      <p>from last month</p>
+    <section class="content-total">
+      <div class="content-total__month">
+        <p>Total this month</p>
+        <p>$478.33</p>
+      </div>
+      <div class="content-total__last-month">
+        <p>+2.4%</p>
+        <p>from last month</p>
+      </div>      
     </section>
   </main>
 </body>
