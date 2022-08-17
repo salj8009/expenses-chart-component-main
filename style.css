@@ -40,8 +40,7 @@ main {
 }
 main h1 {
     color: var(--DarkBrown);
-    /*font-size: 1.4rem;*/
-    font-size: clamp(1.4rem , 3vw , 5rem);
+    font-size: clamp(1.4rem , 2vw , 5rem);
     font-weight: 700;
 }
 .content-balance__myalance {
@@ -64,6 +63,7 @@ main h1 {
 }
 .content-week p {
     color: var(--MediumBrown);
+    margin-right: 10%;
 }
 .span-week {
     width: 38px;
@@ -105,6 +105,14 @@ main h1 {
     top: 156px;
     height: 104px;
 }
+.span-week:hover {
+    background-color: #FF9B87;
+    cursor: pointer;
+}
+.week-span__wed:hover {
+    background-color: #B4DFE5;
+    cursor: pointer;
+}
 hr {
     border: 2px solid var(--Cream);
 }
@@ -136,13 +144,75 @@ hr {
     color: var(--MediumBrown);
 }
 
+.span-amount  { 
+    display: flex;
+    top: 505px;
+    text-align: center;
+    background: var(--DarkBrown);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: clamp(.7rem , 2vw , 1rem);
+     }     
+.amount-mon {
+    position: absolute;
+    top: 155px;
+}
+.amount-tue {
+    top: 91px;
+    position: absolute;
+    left: 16%;
+}
+.amount-wed {
+    position: absolute;
+    top: 40px;
+    left: 31%;
+}
+.amount-thu {
+    position: absolute;
+    top: 100px;
+    left: 47%;
+}
+.amount-fri {
+    position: absolute;
+    top: 124px;
+    left: 62%;
+}
+.amount-sat {
+    position: absolute;
+    top: 56px;
+    left: 76%;
+}
+.amount-sun {
+    position: absolute;
+    top: 116px;
+    left: 91%;
+}
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+
 @media (min-width: 475px) {
     header {
         margin: 100px auto 50px auto;
+        max-width: 500px;
         
     }
     main {
         margin-inline-end: auto;
         margin-inline-start: auto;
+        max-width: 500px;
+    }
+    .content-week {
+        max-width: 500px;
+    }
+    .span-week {
+        width: 50px;
     }
 }

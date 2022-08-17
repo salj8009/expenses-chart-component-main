@@ -19,10 +19,20 @@
       <img src="./images/logo.svg" alt="logo">
     </figure>
   </header>
-  <main>
+  <main>    
     <h1>Spending - Last 7 days</h1>
+      
     <section class="content-week">
-      <p>mon<span class="span-week week-span__mon"></span></p>
+      <div class="content-amount">
+        <span class="span-amount amount-mon hidden"></span>
+        <span class="span-amount amount-tue hidden"></span>
+        <span class="span-amount amount-wed hidden"></span>
+        <span class="span-amount amount-thu hidden"></span>
+        <span class="span-amount amount-fri hidden"></span>
+        <span class="span-amount amount-sat hidden"></span>
+        <span class="span-amount amount-sun hidden"></span>
+      </div>          
+      <p>mon<span class="span-week week-span__mon"></span></p>      
       <p>tue<span class="span-week week-span__tue"></span></p>
       <p>wed<span class="span-week week-span__wed"></span></p>
       <p>thu<span class="span-week week-span__thu"></span></p>
@@ -42,5 +52,6 @@
       </div>      
     </section>
   </main>
+  <script src="main.js"></script>
 </body>
 </html>
